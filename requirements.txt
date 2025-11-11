@@ -13,3 +13,5 @@ av
 numpy
 scipy
 webrtcvad-wheels
+google-cloud-aiplatform
+google-cloud-logging
