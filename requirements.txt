@@ -1,0 +1,15 @@
+streamlit
+fastapi
+uvicorn
+requests
+python-dotenv
+openai
+weaviate-client==3.*
+langchain-openai
+langchain-community
+gTTS
+soundfile
+av
+numpy
+scipy
+webrtcvad-wheels
