@@ -30,8 +30,9 @@ EXPOSE 8080
 # Create a startup script that runs both services
 RUN echo '#!/bin/bash\n\
 uvicorn realtime_server:app --host 0.0.0.0 --port 5050 &\n\
-streamlit run backup.py --server.port=8080 --server.address=0.0.0.0 --server.enableCORS=false --server.enableXsrfProtection=false\n\
+streamlit run app.py --server.port=8080 --server.address=0.0.0.0 --server.enableCORS=false --server.enableXsrfProtection=false\n\
 ' > /app/start.sh && chmod +x /app/start.sh
 
 # Run the startup script
+
 CMD ["/app/start.sh"]
